@@ -1,0 +1,2 @@
+INFO:root:Namespace(m='lenet5', d='cifar10', s=2, R=10000, K=5, M=1000, P=10, partition='exdir', alpha=[1, 100.0], optim='sgd', lr=0.1, lr_decay=1.0, momentum=0.0, weight_decay=0.0, global_lr=1.0, batch_size=20, seed=0, clip=10, log='info+log', eval_every=100, device=0, start_round=0, save_model=0)
+INFO:root:record_name: BalancingFedAvgII1.0_M1000_P10_K5_R10000,100_lenet5_cifar10_exdir1,100.0_sgd0.1,1.0,0.0,0.0_b20_seed0_clip10

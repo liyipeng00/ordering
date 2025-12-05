@@ -1,0 +1,221 @@
+INFO:root:Namespace(m='lenet5', d='fashionmnist', s=2, R=10000, K=5, M=1000, P=10, partition='exdir', alpha=[1, 100.0], optim='sgd', lr=0.1, lr_decay=1.0, momentum=0.0, weight_decay=0.0, global_lr=1.0, batch_size=20, seed=0, clip=0, log='info+log', eval_every=100, device=0, start_round=0, save_model=0)
+INFO:root:record_name: BalancingFedAvgII1.0_M1000_P10_K5_R10000,100_lenet5_fashionmnist_exdir1,100.0_sgd0.1,1.0,0.0,0.0_b20_seed0_clip0
+INFO:root:LeNet5(
+  (features): Sequential(
+    (0): Conv2d(1, 6, kernel_size=(5, 5), stride=(1, 1))
+    (1): ReLU()
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (3): Conv2d(6, 16, kernel_size=(5, 5), stride=(1, 1))
+    (4): ReLU()
+    (5): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (flatten): Flatten(start_dim=1, end_dim=-1)
+  (classifier): Sequential(
+    (0): Linear(in_features=256, out_features=120, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=120, out_features=84, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=84, out_features=10, bias=True)
+  )
+)
+INFO:root:Round 100's server train  acc:  61.63%, train loss: 0.9901
+INFO:root:Round 100's server test   acc:  60.63%, test  loss: 1.0044
+INFO:root:Round 200's server train  acc:  70.98%, train loss: 0.7537
+INFO:root:Round 200's server test   acc:  70.73%, test  loss: 0.7676
+INFO:root:Round 300's server train  acc:  76.19%, train loss: 0.6028
+INFO:root:Round 300's server test   acc:  75.61%, test  loss: 0.6224
+INFO:root:Round 400's server train  acc:  77.26%, train loss: 0.5758
+INFO:root:Round 400's server test   acc:  76.74%, test  loss: 0.5965
+INFO:root:Round 500's server train  acc:  78.34%, train loss: 0.5616
+INFO:root:Round 500's server test   acc:  77.38%, test  loss: 0.5851
+INFO:root:Round 600's server train  acc:  82.05%, train loss: 0.4754
+INFO:root:Round 600's server test   acc:  80.53%, test  loss: 0.5020
+INFO:root:Round 700's server train  acc:  83.23%, train loss: 0.4448
+INFO:root:Round 700's server test   acc:  82.40%, test  loss: 0.4668
+INFO:root:Round 800's server train  acc:  82.72%, train loss: 0.4401
+INFO:root:Round 800's server test   acc:  81.44%, test  loss: 0.4707
+INFO:root:Round 900's server train  acc:  84.51%, train loss: 0.4137
+INFO:root:Round 900's server test   acc:  83.61%, test  loss: 0.4420
+INFO:root:Round 1000's server train  acc:  83.72%, train loss: 0.4218
+INFO:root:Round 1000's server test   acc:  82.69%, test  loss: 0.4541
+INFO:root:Round 1100's server train  acc:  84.98%, train loss: 0.4051
+INFO:root:Round 1100's server test   acc:  83.72%, test  loss: 0.4352
+INFO:root:Round 1200's server train  acc:  85.75%, train loss: 0.3800
+INFO:root:Round 1200's server test   acc:  85.22%, test  loss: 0.4118
+INFO:root:Round 1300's server train  acc:  86.68%, train loss: 0.3541
+INFO:root:Round 1300's server test   acc:  85.41%, test  loss: 0.3918
+INFO:root:Round 1400's server train  acc:  85.28%, train loss: 0.3949
+INFO:root:Round 1400's server test   acc:  83.99%, test  loss: 0.4264
+INFO:root:Round 1500's server train  acc:  86.67%, train loss: 0.3552
+INFO:root:Round 1500's server test   acc:  85.67%, test  loss: 0.3885
+INFO:root:Round 1600's server train  acc:  81.09%, train loss: 0.4794
+INFO:root:Round 1600's server test   acc:  79.56%, test  loss: 0.5227
+INFO:root:Round 1700's server train  acc:  87.04%, train loss: 0.3441
+INFO:root:Round 1700's server test   acc:  85.66%, test  loss: 0.3824
+INFO:root:Round 1800's server train  acc:  87.43%, train loss: 0.3354
+INFO:root:Round 1800's server test   acc:  86.36%, test  loss: 0.3710
+INFO:root:Round 1900's server train  acc:  87.36%, train loss: 0.3363
+INFO:root:Round 1900's server test   acc:  86.27%, test  loss: 0.3738
+INFO:root:Round 2000's server train  acc:  87.61%, train loss: 0.3295
+INFO:root:Round 2000's server test   acc:  86.38%, test  loss: 0.3722
+INFO:root:Round 2100's server train  acc:  88.02%, train loss: 0.3188
+INFO:root:Round 2100's server test   acc:  87.07%, test  loss: 0.3608
+INFO:root:Round 2200's server train  acc:  87.27%, train loss: 0.3341
+INFO:root:Round 2200's server test   acc:  85.67%, test  loss: 0.3856
+INFO:root:Round 2300's server train  acc:  88.29%, train loss: 0.3119
+INFO:root:Round 2300's server test   acc:  86.99%, test  loss: 0.3590
+INFO:root:Round 2400's server train  acc:  88.16%, train loss: 0.3101
+INFO:root:Round 2400's server test   acc:  87.01%, test  loss: 0.3600
+INFO:root:Round 2500's server train  acc:  88.22%, train loss: 0.3134
+INFO:root:Round 2500's server test   acc:  87.06%, test  loss: 0.3561
+INFO:root:Round 2600's server train  acc:  87.00%, train loss: 0.3321
+INFO:root:Round 2600's server test   acc:  85.43%, test  loss: 0.3802
+INFO:root:Round 2700's server train  acc:  88.48%, train loss: 0.3019
+INFO:root:Round 2700's server test   acc:  87.28%, test  loss: 0.3517
+INFO:root:Round 2800's server train  acc:  88.72%, train loss: 0.2958
+INFO:root:Round 2800's server test   acc:  87.23%, test  loss: 0.3490
+INFO:root:Round 2900's server train  acc:  88.30%, train loss: 0.3065
+INFO:root:Round 2900's server test   acc:  86.77%, test  loss: 0.3607
+INFO:root:Round 3000's server train  acc:  88.32%, train loss: 0.3043
+INFO:root:Round 3000's server test   acc:  86.91%, test  loss: 0.3567
+INFO:root:Round 3100's server train  acc:  89.34%, train loss: 0.2787
+INFO:root:Round 3100's server test   acc:  87.62%, test  loss: 0.3369
+INFO:root:Round 3200's server train  acc:  89.71%, train loss: 0.2717
+INFO:root:Round 3200's server test   acc:  88.08%, test  loss: 0.3311
+INFO:root:Round 3300's server train  acc:  89.52%, train loss: 0.2746
+INFO:root:Round 3300's server test   acc:  87.73%, test  loss: 0.3359
+INFO:root:Round 3400's server train  acc:  89.19%, train loss: 0.2839
+INFO:root:Round 3400's server test   acc:  87.71%, test  loss: 0.3427
+INFO:root:Round 3500's server train  acc:  89.50%, train loss: 0.2722
+INFO:root:Round 3500's server test   acc:  87.93%, test  loss: 0.3304
+INFO:root:Round 3600's server train  acc:  89.01%, train loss: 0.2904
+INFO:root:Round 3600's server test   acc:  87.24%, test  loss: 0.3506
+INFO:root:Round 3700's server train  acc:  89.44%, train loss: 0.2724
+INFO:root:Round 3700's server test   acc:  87.47%, test  loss: 0.3365
+INFO:root:Round 3800's server train  acc:  90.06%, train loss: 0.2616
+INFO:root:Round 3800's server test   acc:  88.33%, test  loss: 0.3286
+INFO:root:Round 3900's server train  acc:  89.45%, train loss: 0.2757
+INFO:root:Round 3900's server test   acc:  87.54%, test  loss: 0.3371
+INFO:root:Round 4000's server train  acc:  89.98%, train loss: 0.2590
+INFO:root:Round 4000's server test   acc:  88.21%, test  loss: 0.3264
+INFO:root:Round 4100's server train  acc:  89.83%, train loss: 0.2688
+INFO:root:Round 4100's server test   acc:  88.31%, test  loss: 0.3364
+INFO:root:Round 4200's server train  acc:  90.50%, train loss: 0.2474
+INFO:root:Round 4200's server test   acc:  88.25%, test  loss: 0.3235
+INFO:root:Round 4300's server train  acc:  90.39%, train loss: 0.2478
+INFO:root:Round 4300's server test   acc:  88.40%, test  loss: 0.3249
+INFO:root:Round 4400's server train  acc:  90.41%, train loss: 0.2489
+INFO:root:Round 4400's server test   acc:  88.15%, test  loss: 0.3272
+INFO:root:Round 4500's server train  acc:  90.14%, train loss: 0.2558
+INFO:root:Round 4500's server test   acc:  88.02%, test  loss: 0.3364
+INFO:root:Round 4600's server train  acc:  90.43%, train loss: 0.2464
+INFO:root:Round 4600's server test   acc:  88.27%, test  loss: 0.3245
+INFO:root:Round 4700's server train  acc:  90.47%, train loss: 0.2421
+INFO:root:Round 4700's server test   acc:  87.78%, test  loss: 0.3325
+INFO:root:Round 4800's server train  acc:  89.91%, train loss: 0.2645
+INFO:root:Round 4800's server test   acc:  87.42%, test  loss: 0.3499
+INFO:root:Round 4900's server train  acc:  90.62%, train loss: 0.2417
+INFO:root:Round 4900's server test   acc:  88.21%, test  loss: 0.3300
+INFO:root:Round 5000's server train  acc:  90.71%, train loss: 0.2391
+INFO:root:Round 5000's server test   acc:  88.60%, test  loss: 0.3305
+INFO:root:Round 5100's server train  acc:  90.58%, train loss: 0.2438
+INFO:root:Round 5100's server test   acc:  88.39%, test  loss: 0.3337
+INFO:root:Round 5200's server train  acc:  91.10%, train loss: 0.2301
+INFO:root:Round 5200's server test   acc:  88.73%, test  loss: 0.3239
+INFO:root:Round 5300's server train  acc:  91.77%, train loss: 0.2154
+INFO:root:Round 5300's server test   acc:  89.12%, test  loss: 0.3050
+INFO:root:Round 5400's server train  acc:  91.32%, train loss: 0.2230
+INFO:root:Round 5400's server test   acc:  89.07%, test  loss: 0.3131
+INFO:root:Round 5500's server train  acc:  91.08%, train loss: 0.2326
+INFO:root:Round 5500's server test   acc:  88.56%, test  loss: 0.3397
+INFO:root:Round 5600's server train  acc:  91.38%, train loss: 0.2242
+INFO:root:Round 5600's server test   acc:  88.25%, test  loss: 0.3242
+INFO:root:Round 5700's server train  acc:  91.69%, train loss: 0.2144
+INFO:root:Round 5700's server test   acc:  88.91%, test  loss: 0.3166
+INFO:root:Round 5800's server train  acc:  91.39%, train loss: 0.2234
+INFO:root:Round 5800's server test   acc:  88.68%, test  loss: 0.3249
+INFO:root:Round 5900's server train  acc:  91.81%, train loss: 0.2134
+INFO:root:Round 5900's server test   acc:  89.03%, test  loss: 0.3159
+INFO:root:Round 6000's server train  acc:  91.83%, train loss: 0.2123
+INFO:root:Round 6000's server test   acc:  89.06%, test  loss: 0.3185
+INFO:root:Round 6100's server train  acc:  92.19%, train loss: 0.2051
+INFO:root:Round 6100's server test   acc:  89.24%, test  loss: 0.3085
+INFO:root:Round 6200's server train  acc:  89.97%, train loss: 0.2599
+INFO:root:Round 6200's server test   acc:  88.05%, test  loss: 0.3438
+INFO:root:Round 6300's server train  acc:  91.42%, train loss: 0.2214
+INFO:root:Round 6300's server test   acc:  88.47%, test  loss: 0.3244
+INFO:root:Round 6400's server train  acc:  73.98%, train loss: 0.7275
+INFO:root:Round 6400's server test   acc:  73.22%, test  loss: 0.7386
+INFO:root:Round 6500's server train  acc:  85.94%, train loss: 0.3656
+INFO:root:Round 6500's server test   acc:  84.61%, test  loss: 0.4038
+INFO:root:Round 6600's server train  acc:  88.48%, train loss: 0.3114
+INFO:root:Round 6600's server test   acc:  86.54%, test  loss: 0.3616
+INFO:root:Round 6700's server train  acc:  89.08%, train loss: 0.2863
+INFO:root:Round 6700's server test   acc:  87.32%, test  loss: 0.3466
+INFO:root:Round 6800's server train  acc:  89.56%, train loss: 0.2721
+INFO:root:Round 6800's server test   acc:  87.51%, test  loss: 0.3381
+INFO:root:Round 6900's server train  acc:  89.83%, train loss: 0.2636
+INFO:root:Round 6900's server test   acc:  88.17%, test  loss: 0.3373
+INFO:root:Round 7000's server train  acc:  89.12%, train loss: 0.2766
+INFO:root:Round 7000's server test   acc:  87.38%, test  loss: 0.3590
+INFO:root:Round 7100's server train  acc:  90.21%, train loss: 0.2559
+INFO:root:Round 7100's server test   acc:  87.99%, test  loss: 0.3396
+INFO:root:Round 7200's server train  acc:  90.56%, train loss: 0.2473
+INFO:root:Round 7200's server test   acc:  88.27%, test  loss: 0.3322
+INFO:root:Round 7300's server train  acc:  90.59%, train loss: 0.2435
+INFO:root:Round 7300's server test   acc:  88.39%, test  loss: 0.3331
+INFO:root:Round 7400's server train  acc:  90.51%, train loss: 0.2445
+INFO:root:Round 7400's server test   acc:  87.70%, test  loss: 0.3419
+INFO:root:Round 7500's server train  acc:  91.14%, train loss: 0.2292
+INFO:root:Round 7500's server test   acc:  88.55%, test  loss: 0.3272
+INFO:root:Round 7600's server train  acc:  91.29%, train loss: 0.2239
+INFO:root:Round 7600's server test   acc:  88.55%, test  loss: 0.3263
+INFO:root:Round 7700's server train  acc:  91.47%, train loss: 0.2202
+INFO:root:Round 7700's server test   acc:  88.74%, test  loss: 0.3178
+INFO:root:Round 7800's server train  acc:  91.58%, train loss: 0.2158
+INFO:root:Round 7800's server test   acc:  88.66%, test  loss: 0.3287
+INFO:root:Round 7900's server train  acc:  91.42%, train loss: 0.2257
+INFO:root:Round 7900's server test   acc:  88.51%, test  loss: 0.3305
+INFO:root:Round 8000's server train  acc:  90.39%, train loss: 0.2403
+INFO:root:Round 8000's server test   acc:  87.22%, test  loss: 0.3503
+INFO:root:Round 8100's server train  acc:  91.44%, train loss: 0.2211
+INFO:root:Round 8100's server test   acc:  88.64%, test  loss: 0.3276
+INFO:root:Round 8200's server train  acc:  91.55%, train loss: 0.2158
+INFO:root:Round 8200's server test   acc:  88.92%, test  loss: 0.3313
+INFO:root:Round 8300's server train  acc:  91.83%, train loss: 0.2127
+INFO:root:Round 8300's server test   acc:  88.85%, test  loss: 0.3213
+INFO:root:Round 8400's server train  acc:  89.46%, train loss: 0.2708
+INFO:root:Round 8400's server test   acc:  86.74%, test  loss: 0.3847
+INFO:root:Round 8500's server train  acc:  91.96%, train loss: 0.2078
+INFO:root:Round 8500's server test   acc:  88.68%, test  loss: 0.3277
+INFO:root:Round 8600's server train  acc:  91.98%, train loss: 0.2062
+INFO:root:Round 8600's server test   acc:  89.17%, test  loss: 0.3206
+INFO:root:Round 8700's server train  acc:  91.64%, train loss: 0.2107
+INFO:root:Round 8700's server test   acc:  88.40%, test  loss: 0.3393
+INFO:root:Round 8800's server train  acc:  91.84%, train loss: 0.2090
+INFO:root:Round 8800's server test   acc:  88.89%, test  loss: 0.3329
+INFO:root:Round 8900's server train  acc:  91.84%, train loss: 0.2097
+INFO:root:Round 8900's server test   acc:  88.67%, test  loss: 0.3305
+INFO:root:Round 9000's server train  acc:  92.28%, train loss: 0.1962
+INFO:root:Round 9000's server test   acc:  88.96%, test  loss: 0.3333
+INFO:root:Round 9100's server train  acc:  92.12%, train loss: 0.2017
+INFO:root:Round 9100's server test   acc:  88.66%, test  loss: 0.3291
+INFO:root:Round 9200's server train  acc:  91.82%, train loss: 0.2085
+INFO:root:Round 9200's server test   acc:  88.43%, test  loss: 0.3400
+INFO:root:Round 9300's server train  acc:  92.91%, train loss: 0.1814
+INFO:root:Round 9300's server test   acc:  89.34%, test  loss: 0.3211
+INFO:root:Round 9400's server train  acc:  92.63%, train loss: 0.1889
+INFO:root:Round 9400's server test   acc:  89.16%, test  loss: 0.3298
+INFO:root:Round 9500's server train  acc:  91.57%, train loss: 0.2178
+INFO:root:Round 9500's server test   acc:  88.06%, test  loss: 0.3517
+INFO:root:Round 9600's server train  acc:  93.03%, train loss: 0.1784
+INFO:root:Round 9600's server test   acc:  89.29%, test  loss: 0.3214
+INFO:root:Round 9700's server train  acc:  92.99%, train loss: 0.1793
+INFO:root:Round 9700's server test   acc:  89.26%, test  loss: 0.3237
+INFO:root:Round 9800's server train  acc:  92.97%, train loss: 0.1810
+INFO:root:Round 9800's server test   acc:  88.99%, test  loss: 0.3299
+INFO:root:Round 9900's server train  acc:  93.05%, train loss: 0.1774
+INFO:root:Round 9900's server test   acc:  89.42%, test  loss: 0.3291
+INFO:root:Round 10000's server train  acc:  92.78%, train loss: 0.1834
+INFO:root:Round 10000's server test   acc:  88.77%, test  loss: 0.3286
+INFO:root:TrainingTime: 1261.8145406246185 sec
